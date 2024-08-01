@@ -1,0 +1,14 @@
+.contactListItem {
+  width: 153px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contactName {
+  font-weight: 600;
+}
+
+.btn {
+  border: 1px solid black;
+}
