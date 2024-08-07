@@ -23,6 +23,7 @@ export default function LoginForm() {
 
   return (
     <div>
+      <h2 className={css.title}>Please, log in</h2>
       <Formik
         initialValues={{
           email: "",
@@ -34,15 +35,17 @@ export default function LoginForm() {
         <Form className={css.loginForm}>
           <label className={css.label}>
             Email
-            <Field type="email" name="email" />
+            <Field className={css.input} type="email" name="email" />
             <ErrorMessage className={css.errorMessage} name="email" />
           </label>
           <label className={css.label}>
             Password
-            <Field type="password" name="password" />
+            <Field className={css.input} type="password" name="password" />
             <ErrorMessage className={css.errorMessage} name="password" />
           </label>
-          <button type="submit">Log In</button>
+          <button className={css.loginBtn} type="submit">
+            Log In
+          </button>
         </Form>
       </Formik>
     </div>

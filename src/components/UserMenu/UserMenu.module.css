@@ -1,12 +1,27 @@
 .userMenu {
   display: flex;
-  gap: 10px;
+  gap: 18px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #004311;
+}
+
+.username {
+  font-style: italic;
 }
 
 .logoutBtn {
-  font-size: 24px;
-  border: 1px solid black;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  font-size: 16px;
+  color: white;
+  background-color: #004311;
+  border: none;
   border-radius: 8px;
+  padding: 3px 20px;
+}
+
+.logoutBtn:hover,
+.logoutBtn:focus {
+  border: 1px solid rgb(38, 38, 38);
+  background-color: #015014;
 }

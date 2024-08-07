@@ -9,7 +9,6 @@ export default function LoginPage() {
   const isLoading = useSelector(selectLoading);
   return (
     <>
-      <h2>Please, log in</h2>
       <LoginForm />
       {isError && <Error />}
       {isLoading && <Loader />}

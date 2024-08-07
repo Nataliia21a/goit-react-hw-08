@@ -27,7 +27,7 @@ export default function RegistrationForm() {
   };
   return (
     <div>
-      <h2>Register your account</h2>
+      <h2 className={css.title}>Register your account</h2>
       <Formik
         initialValues={{
           name: "",
@@ -37,24 +37,26 @@ export default function RegistrationForm() {
         validationSchema={ContactSchema}
         onSubmit={handleSubmit}
       >
-        <Form className={css.Form}>
+        <Form className={css.form}>
           <label className={css.label}>
             Username
-            <Field type="text" name="name" />
+            <Field className={css.input} type="text" name="name" />
             <ErrorMessage className={css.errorMessage} name="name" />
           </label>
           <label className={css.label}>
             Email
-            <Field type="email" name="email" />
+            <Field className={css.input} type="email" name="email" />
             <ErrorMessage className={css.errorMessage} name="email" />
           </label>
 
           <label className={css.label}>
             Password
-            <Field type="password" name="password" />
+            <Field className={css.input} type="password" name="password" />
           </label>
           <ErrorMessage className={css.errorMessage} name="password" />
-          <button type="submit">Register</button>
+          <button className={css.btn} type="submit">
+            Register
+          </button>
         </Form>
       </Formik>
     </div>

@@ -1,11 +1,43 @@
 .loginForm {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  max-width: 560px;
+  margin-inline: auto;
 }
 
 .label {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  font-size: 16px;
+  text-align: left;
+  /* padding-left: 8px; */
+}
+
+.input {
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.loginBtn {
+  font-size: 18px;
+  color: white;
+  background-color: #004311;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 20px;
+  height: 40px;
+}
+
+.loginBtn:hover {
+  border: 2px solid rgb(38, 38, 38);
+  background-color: #015014;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #004311;
+  text-align: center;
 }

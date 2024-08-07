@@ -8,8 +8,14 @@ export default function Navigation() {
 
   return (
     <nav className={css.nav}>
-      <NavLink to="/">Home</NavLink>
-      {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
+      <NavLink className={css.home} to="/">
+        Home
+      </NavLink>
+      {isLoggedIn && (
+        <NavLink className={css.contacts} to="/contacts">
+          Contacts
+        </NavLink>
+      )}
     </nav>
   );
 }

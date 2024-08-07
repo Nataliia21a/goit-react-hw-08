@@ -1,8 +1,9 @@
 .contactListItem {
-  width: 153px;
+  width: 162px;
   padding: 5px 10px;
-  border: 1px solid black;
+  border: 1px solid #434455;
   border-radius: 5px;
+  background-color: white;
 }
 
 .contactName {
@@ -10,5 +11,15 @@
 }
 
 .btn {
-  border: 1px solid black;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #434455;
+  /* background-color: #004311; */
+  border: 2px solid #004311;
+  border-radius: 8px;
+  padding: 3px 20px;
+}
+
+.icon {
+  margin-right: 5px;
 }

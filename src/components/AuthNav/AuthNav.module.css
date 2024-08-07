@@ -1,4 +1,12 @@
 .authNav {
   display: flex;
-  gap: 10px;
+  gap: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #004311;
+}
+
+.register:hover,
+.login:hover {
+  color: #01c031;
 }

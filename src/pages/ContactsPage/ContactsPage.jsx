@@ -19,13 +19,13 @@ export default function ContactsPage() {
   }, [dispatch]);
 
   return (
-    <>
+    <div className={css.contactPageContainer}>
       <h2 className={css.title}>Phonebook</h2>
       <ContactForm />
       {isError && <Error />}
       {isLoader && <Loader />}
       <SearchBox />
       <ContactList />
-    </>
+    </div>
   );
 }

@@ -18,11 +18,15 @@ export default function Contact({ contact }) {
   return (
     <div className={css.contactListItem}>
       <p className={css.contactName}>
-        <FaUser />
+        <span className={css.icon}>
+          <FaUser />
+        </span>
         {contact.name}
       </p>
       <p>
-        <BsFillTelephoneFill />
+        <span className={css.icon}>
+          <BsFillTelephoneFill />
+        </span>
         {contact.number}
       </p>
       <button className={css.btn} onClick={handleDelete} type="button">
